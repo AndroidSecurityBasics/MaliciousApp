@@ -7,13 +7,14 @@ import android.view.View;
 import com.security.basics.R;
 
 public class MaliciousDownloadingActivity extends Activity {
+
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.start_download);
+    setContentView(R.layout.submit_credentials);
   }
 
-  public void startAnotherApp(View view) {
+  public void triggerDownload(View view) {
     Intent serviceIntent = new Intent();
     serviceIntent.setAction("com.security.basics.app.services.DOWNLOAD_DATA");
     startService(serviceIntent);

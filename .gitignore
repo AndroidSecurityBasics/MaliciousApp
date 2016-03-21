@@ -10,3 +10,7 @@ out
 *.patch
 *.properties
 *.txt
+*.iml
+*.gradle/2.8/*
+/app/build/*
+/build/*
